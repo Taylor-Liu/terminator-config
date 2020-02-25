@@ -1,0 +1,23 @@
+[global_config]
+[keybindings]
+[profiles]
+  [[default]]
+    use_system_font = False # 是否启用系统字体
+    login_shell = True
+    background_darkness = 0.90 # 背景颜色
+    background_color = "#2d2d2d"
+    background_image = None
+    cursor_color = "#EEE9E9" # 光标颜色
+    foreground_color = "#eee9e9"
+    show_titlebar = False # 不显示标题栏，也就是 terminator 中那个默认的红色的标题栏
+    custom_command = tmux
+    font = Ubuntu Mono 16  # 字体设置，后面的数字表示字体大小
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
